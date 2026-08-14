@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.4;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.cabecalho,
+.conteudo,
+.barra-lateral,
+.card-video,
+.card-secundario,
+.rodape {
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 4px;
+}
+
+.navbar {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-item {
+    border: 1px solid #000;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.conteudo-titulo {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.conteudo-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.conteudo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.barra-lateral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.botao-aside {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: #000;
+    height: 45px;
+    transition: all ease-in-out 400ms;
+    cursor: pointer;
+}
+
+.botao-aside:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.card-video {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-titulo {
+    margin-bottom: 6px;
+}
+
+.card-descricao {
+    margin-bottom: 8px;
+}
+
+.card-video-player {
+    width: 170px;
+    max-width: 400px;
+    border: 1px solid #000;
+    display: block;
+}
+
+.card-secundario {
+    min-height: 60px;
+}
+
+.rodape {
+    min-height: 30px;
+    text-align: center;
+}

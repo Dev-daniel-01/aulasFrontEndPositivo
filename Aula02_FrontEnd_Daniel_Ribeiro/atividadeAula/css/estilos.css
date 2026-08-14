@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+    /* tirei o display:flex, align-items e justify-content */
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;          /* ocupa a largura toda */
+    min-height: 90vh;     /* ocupa quase a altura toda da tela */
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+/* Foto redonda */
+.perfil-foto-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Coluna de textos (alinhada em cima) */
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-saudacao {
+    font-size: 44px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.perfil-subtitulo {
+    font-size: 18px;
+    font-weight: normal;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.perfil-texto {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Fileira dos 3 botões, alinhada à direita */
+.perfil-botoes {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+/* Botões coloridos redondos */
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: transform 200ms ease-in-out;
+}
+
+.botao:hover {
+    transform: scale(1.08);
+}
+
+.botao-resume {
+    background-color: #6fa8dc;
+}
+
+.botao-projects {
+    background-color: #e8a87c;
+}
+
+.botao-contacts {
+    background-color: #e78ea9;
+}

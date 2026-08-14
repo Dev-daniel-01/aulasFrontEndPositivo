@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Aula02_FrontEnd_Daniel_Ribeiro/img/icone-aba.png">
+    <link rel="stylesheet" href="/Aula02_FrontEnd_Daniel_Ribeiro/css/estilos.css">
+    <title>programition</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#section1">section1</a></li>
+            <li class="navbar-item"><a href="#section2">section2</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho">
+        <h2 class="cabecalho-titulo">ola aqui é o header do coelho</h2>
+    </header>
+
+    <div class="conteudo-layout">
+        <main class="conteudo">
+            <h2 class="conteudo-titulo">aqui é a main</h2>
+
+            <section class="card-video" id="section1">
+                <h3 class="card-titulo">section 1 video o coelho</h3>
+                <p class="card-descricao">
+                    Confira o video de um coelho muito legal e espetacular empalhado
+                </p>
+                <video class="card-video-player" controls>
+                    <source src="/Aula02_FrontEnd_Daniel_Ribeiro/assets/videos/rabbit320.webm" type="video/webm">
+                </video>
+            </section>
+
+            <section class="card-secundario" id="section2">
+                <h3 class="card-titulo">section 2 audio do coelho</h3>
+                <p class="card-descricao">
+                    Confira o audio de um coelho muito legal e espetacular empalhado
+                </p>
+                <audio class="card-video-audio" controls>
+                    <source src="/Aula02_FrontEnd_Daniel_Ribeiro/assets/videos/rabbit320.webm" type="audio/webm">
+                </audio>
+            </section>
+        </main>
+
+        <aside class="barra-lateral">
+            <h2>Aqui é o Aside</h2>
+            <p class="barra-lateral-texto">
+                O vídeo do coelho é um exemplo clássico usado pela Mozilla para demonstrar
+                como incorporar mídia em páginas web. Com as tags &lt;video&gt; e &lt;audio&gt;
+                do HTML5, dá pra exibir vídeos e tocar áudios direto no navegador, sem precisar
+                de plugins externos. Você controla tudo por atributos simples como controls,
+                autoplay e loop. Quer entender a fundo como funciona? Confere a documentação
+                oficial no botão abaixo.
+            </p>
+            <button class="botao-aside"
+                onclick="window.open('https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content', '_blank')">
+                Saiba mais sobre vídeo e áudio
+            </button>
+        </aside>
+    </div>
+
+    <footer class="rodape">
+        <h3>footer do coelho empalhado legal</h3>
+    </footer>
+</body>
+
+</html>
