@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #06603f;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #06603f;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    font-size: 15px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline;
+    width: auto;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+input:user-valid, select:user-valid {
+    border-color: green;
+}
+
+input:user-invalid, select:user-invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #06603f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}

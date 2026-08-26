@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário HTML com Validação Básica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="codigos/script.js" defer></script>
+</head>
+<body>
+    <h1>Exemplo de Formulário HTML com Validação Básica</h1>
+    <form id="contato" action="sucesso.html">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" 
+                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="41-99999-9999"
+                title="Use o formato DD-99999-9999"required>
+            
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" min="1940-01-01" max="2026-12-31" required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" 
+                min="18" max="120" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferências</legend>
+            
+            <label for="cor">Cor Favorita:</label>
+            <input type="color" id="cor" name="cor">
+            
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" 
+                min="0" max="100" value="50">
+        
+            <datalist id="navegadores">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+            </datalist>
+
+            <label for="navegador">Escolha seu navegador:</label>
+            <input list="navegadores" id="navegador" name="navegador">
+
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">--Selecione--</option>
+                <option value="duvida">Dúvida</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+
+            <details>
+                <summary>Clique para ver mais informações</summary>
+                <p>Conteúdo adicional que aparece quando expandido.</p>
+            </details>
+
+            <label>Período de preferência:</label>
+            <input type="radio" id="pm" name="periodo">
+            <label for="pm">Manhã</label>
+            <input type="radio" id="pt" name="periodo" checked>
+            <label for="pt">Tarde</label>
+            <input type="radio" id="pn" name="periodo">
+            <label for="pn">Noite</label>   
+            
+            <label>Veículos usados para deslocamento:</label>
+            <input type="checkbox" id="carro">
+            <label for="carro">Carro</label>
+            <input type="checkbox" id="moto">
+            <label for="moto">Motoca</label>
+            <input type="checkbox" id="bike" checked>
+            <label for="bike">Bicicleta</label> 
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
