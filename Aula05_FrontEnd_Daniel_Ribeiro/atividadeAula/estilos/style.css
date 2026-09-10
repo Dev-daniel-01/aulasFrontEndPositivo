@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+.container-amarelo div {
+    height: 250px;
+}
+
+.container-vermelho div {
+    height: 350px;
+}
+
+.container-azul div {
+    height: 250px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container-azul {
+        display: flex;
+        flex-direction: column;
+    }
+    .div-some {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .container-amarelo{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
