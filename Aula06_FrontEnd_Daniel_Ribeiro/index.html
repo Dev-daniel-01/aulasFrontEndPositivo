@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Layout WEB com Bootstrap Microsoft</title>
+</head>
+
+<body>
+    <main>
+        <nav class="menu container-fluid bg-white d-flex justify-content-between align-items-center border-bottom py-3 px-4">
+            <div class="d-flex align-items-center gap-4">
+                <a href="#" class="logo">
+                    <img src="./assets/images/Microsoft-Logo-Transparent.png" alt="Microsoft-Logo-Transparent" width="100">
+                </a>
+                <ul class="menu_links nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#">Microsoft 365</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Azure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Copilot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">XBOX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <ul class="menu_usuario nav gap-3 align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Toda a Microsoft</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Microsoft 365</a></li>
+                        <li><a class="dropdown-item" href="#">Azure</a></li>
+                        <li><a class="dropdown-item" href="#">Copilot</a></li>
+                        <li><a class="dropdown-item" href="#">Windows</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart"></i></a></li>
+                <li class="nav-item"><a href="#" class="botao_perfil btn rounded-circle fw-bold border border-secondary text-secondary bg-white">FG</a></li>
+            </ul>
+        </nav>
+
+        <section class="container_titulo text-white text-center">
+            <h1 class="texto_titulo fw-bold col-lg-9 mx-auto mb-4">Infraestrutura global desenvolvida <br>para
+                oferecer suporte às soluções <br>de IA mais avançadas do mundo</h1>
+            <p class="subtexto_titulo  mx-auto mb-4">De datacenters ao silício, o Azure entrega
+                infraestrutura em escala global, com mais regiões do que <br>qualquer outro provedor de nuvem.
+                Maia 200 traz aceleração de IA para inferências mais rápidas e <br>eficientes em todo o Azure.</p>
+            <div class="botoes_titulo d-flex justify-content-center gap-3">
+                <a href="#" class="botao_principal btn btn-light rounded px-4">Explore o globo</a>
+                <a href="#" class="botao_secundario btn btn-outline-light rounded px-4">Descubra o Maia 200</a>
+            </div>
+        </section>
+
+        <section class="container_cards py-5">
+            <div class="container ">
+                <h2 class="titulo_secao fw-bold mb-4">Para negócios</h2>
+                <div class="lista_cards row gap-3">
+                    <div class="col-6 col-md">
+                        <div class="card_negocio bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                            <img src="./assets/images/Content-Card-Microsoft-365-Copilot.avif"
+                                class="imagem_card w-100 object-fit-cover"
+                                alt="Content-Card-Microsoft-365-Copilot">
+                            <div class="texto_card p-3 d-flex flex-column flex-grow-1">
+                                <h4>Microsoft 365 Copilot</h4>
+                                <p class="text-secondary flex-grow-1">Com a IA no Microsoft 365 para empresas, você
+                                    poupa tempo e se concentra no que realmente importa.</p>
+                                <a href="#" class="botao_card btn btn-primary btn-sm rounded mt-auto align-self-start p-2">Saiba
+                                    mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md">
+                        <div class="card_negocio bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                            <img src="./assets/images/Content-Card-Windows-11.avif"
+                                class="imagem_card w-100 object-fit-cover" alt="Content-Card-Windows-11">
+                            <div class="texto_card p-3 d-flex flex-column flex-grow-1">
+                                <h4>Windows 11 para empresas</h4>
+                                <p class="text-secondary flex-grow-1">Projetado para o trabalho híbrido. Eficiente
+                                    para os funcionários. Consistente para a TI. Seguro para todos.</p>
+                                <a href="#" class="botao_card btn btn-primary btn-sm rounded mt-auto align-self-start p-2 ">Saiba
+                                    mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md">
+                        <div class="card_negocio bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                            <img src="./assets/images/Content-Card-Microsoft-AI.webp"
+                                class="imagem_card w-100 object-fit-cover" alt="Content-Card-Microsoft-AI">
+                            <div class="texto_card p-3 d-flex flex-column flex-grow-1">
+                                <h4>Entre na era da IA</h4>
+                                <p class="text-secondary flex-grow-1">Crie, comunique e codifique com as soluções de
+                                    IA da Microsoft.</p>
+                                <a href="#" class="botao_card btn btn-primary btn-sm rounded mt-auto align-self-start p-2">Explore
+                                    as soluções de IA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md">
+                        <div class="card_negocio bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                            <img src="./assets/images/Feature-Azure-Wave-Off-White.avif"
+                                class="imagem_card w-100 object-fit-cover" alt="Feature-Azure-Wave-Off-White">
+                            <div class="texto_card p-3 d-flex flex-column flex-grow-1">
+                                <h4>Inovação ilimitada</h4>
+                                <p class="text-secondary flex-grow-1">Projete, potencialize e operacionalize sistemas
+                                    que aprendem e se adaptam com o Azure.</p>
+                                <a href="#" class="botao_card btn btn-primary btn-sm rounded mt-auto align-self-start p-2">Introdução
+                                    ao Azure</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container_IA py-5">
+            <div class="container">
+                <div class="cartao_eventos row align-items-center p-1  rounded-4">
+                    <div class="col-6">
+                        <p class="rotulo_eventos text-primary fw-bold mb-1">Eventos</p>
+                        <h2 class="titulo_eventos fw-bold mb-1">Veja como a estratégia de IA se traduz em execução no
+                            mundo real</h2>
+                        <p class="texto_eventos text-secondary mb-5">Participe da Semana de Transformação do
+                            Frontier, com conteúdo técnico, demonstrações e orientações práticas para levar a IA do
+                            potencial à produção.</p>
+                        <a href="#"
+                            class="botao_eventos text-dark text-decoration-none fw-semibold d-inline-flex align-items-center gap-2">
+                            <span
+                                class="icone_seta btn btn-primary rounded p-0 d-inline-flex align-items-center justify-content-center">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                            Registre-se agora
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/images/events_image.avif" class="imagem_eventos img-fluid rounded-4"
+                            alt="events_image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="rodape text-white py-5">
+            <div class="container d-flex justify-content-between gap-5">
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Novidades</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Copilot para organizações</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Copilot para uso pessoal</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Microsoft 365</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Microsoft Store</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Perfil da conta</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Centro de Download</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Suporte da Microsoft Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Educação</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Microsoft Education</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Dispositivos para educação</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Microsoft Teams para Educação</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Negócios</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">IA da Microsoft</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Segurança da Microsoft</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Azure</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Desenvolvedor e TI</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Desenvolvedor Microsoft</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Microsoft Learn</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Suporte marketplace de IA</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna_rodape">
+                    <h6 class="fw-bold mb-3 text-dark">Empresa</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Carreiras</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Sobre a Microsoft</a></li>
+                        <li class="nav-item"><a href="#" class="link_rodape text-secondary text-decoration-none">Notícias da empresa</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
