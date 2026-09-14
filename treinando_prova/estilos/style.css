@@ -1,0 +1,11 @@
+.nav-item:hover{
+    background-color: black;
+}
+
+.nav-link{
+    color: darkslategrey;
+}
+
+.nav-link:hover{
+    color: aliceblue;
+}
