@@ -1,0 +1,15 @@
+.nav-link:hover{
+    background-color: rgb(206, 55, 55);
+    color: white;
+}
+
+.botao-hover:hover{
+    background-color: rgb(20, 120, 20);
+    border-color: rgb(20, 120, 20);
+}
+
+.secao-imagem-fundo{
+    background-image: url("../assets/images/fundo-form.avif");
+    background-size: cover;
+    background-position: center;
+}

@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Treino bootstrap para prova</title>
 </head>
@@ -24,10 +20,10 @@
 <body>
     <main class="container-fluid  bg-body-secondary p-2">
         <nav class="navbar navbar-expand navbar-dark w-100 justify-content-center">
-            <ul class="navbar-nav d-flex gap-5 ">
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Teste</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Teste</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Teste</a></li>
+            <ul class="navbar-nav d-flex gap-5 justi">
+                <li class="nav-item"><a href="#" class="nav-link text-dark rounded px-4 py-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark rounded px-4 py-2">Teste</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark rounded px-4 py-2">Teste</a></li>
             </ul>
         </nav>
         <section class="container-fluid border border-secondary rounded p-3">
@@ -35,7 +31,10 @@
                 <div class="col border-end pe-4">
                     <div>
                         <h1>Olá, precisa de ajuda?</h1>
+                        <h2>Fale conosco</h2>
                         <p>Se precisar pode entrar em contato conosco com o formulario ao lado!</p>
+                        <a href="https://www.google.com" target="_blank" rel="noopener" class="btn btn-secondary mb-3">Saiba mais (link externo)</a>
+                        <button type="button" class="btn btn-primary botao-hover mb-3">Passe o mouse aqui</button>
                     </div>
                     <form onsubmit="enviarFormulario(event)">
                         <div class="mb-3">
@@ -61,12 +60,53 @@
                 </div>
             </div>
         </section>
-
+        <section class="container-fluid border border-secondary rounded p-3" >
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2>Vídeo</h2>
+                    <video class="w-100" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col">
+                    <h2>Áudio</h2>
+                    <audio class="w-100" controls>
+                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid border border-secondary rounded p-3">
+            <h2>Tabela de exemplo</h2>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>20</td>
+                        <td     >Curitiba</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>22</td>
+                        <td>São Paulo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="container-fluid rounded p-5 secao-imagem-fundo text-white text-center">
+            <h2>Seção com imagem de fundo</h2>
+            <p>Este texto fica por cima de uma imagem de fundo definida via CSS.</p>
+        </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
