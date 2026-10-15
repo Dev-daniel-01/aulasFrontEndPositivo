@@ -1,0 +1,23 @@
+body{
+    padding: 20px;
+}
+
+#caixa {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.destaque {
+    background-color: #ffd54f;
+    border-color: #f57f17 !important;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #f57f17;
+}
+
+.oculto {
+    display: none;
+}
