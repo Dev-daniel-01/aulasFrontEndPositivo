@@ -71,3 +71,103 @@ caixa.style.fontSize = '16px';
 btn_add.addEventListener('click', () => caixa.classList.add('destaque'));
 btn_remove.addEventListener('click', () => caixa.classList.remove('destaque'));
 btn_toggle.addEventListener('click', () => caixa.classList.toggle('destaque'));
+
+// Atividade 1 da Semana - cor de fundo aleatória
+const btn_cor = document.querySelector('#btnCorFundo');
+
+btn_cor.addEventListener('click', alteraCorFundo);
+
+function alteraCorFundo() { // cor = rgb(0-255, 0-255, 0-255)
+    const cor = "rgb(" + rand(255) + "," + rand(255) + "," + rand(255) + ")";
+    document.body.style.backgroundColor = cor;
+}
+
+// retorna um inteiro entre 0 e number (inclusive)
+function rand(number) {
+    return Math.floor(Math.random() * (number + 1));
+}
+
+// Atividade 2 da Semana - número aleatório entre 0 e o número lido
+const btn_ale = document.querySelector('#btnAleatorio');
+const resultadoAleatorio = document.getElementById('resultadoAleatorio');
+
+btn_ale.addEventListener('click', numeroAleatorio);
+
+function numeroAleatorio() {
+    const num = parseInt(prompt("Digite um número inteiro: "));
+
+    if (isNaN(num) || num < 0) {
+        resultadoAleatorio.textContent = "Digite um número inteiro válido (maior ou igual a 0).";
+        return;
+    }
+
+    const resp = rand(num);
+    console.log("Lido: " + num);
+    console.log("Aleatório: " + resp);
+    resultadoAleatorio.textContent = "Número lido: " + num + " | Número aleatório: " + resp;
+}
+
+// Atividade 3 da Semana - jogo de adivinhação
+const MAX_TENTATIVAS = 4;
+const inputPalpite = document.getElementById('palpite');
+const btn_chutar = document.getElementById('btnChutar');
+const btn_reiniciar = document.getElementById('btnReiniciar');
+const mensagemJogo = document.getElementById('mensagemJogo');
+const tentativasRestantes = document.getElementById('tentativasRestantes');
+
+let numeroSecreto;
+let tentativas;
+
+btn_chutar.addEventListener('click', verificarPalpite);
+btn_reiniciar.addEventListener('click', iniciarJogo);
+
+function iniciarJogo() {
+    numeroSecreto = rand(10);
+    tentativas = 0;
+    inputPalpite.value = '';
+    inputPalpite.disabled = false;
+    btn_chutar.disabled = false;
+    mensagemJogo.textContent = '';
+    mensagemJogo.style.color = '';
+    tentativasRestantes.textContent = "Tentativas restantes: " + MAX_TENTATIVAS;
+}
+
+function verificarPalpite() {
+    const palpite = parseInt(inputPalpite.value);
+
+    if (isNaN(palpite) || palpite < 0 || palpite > 10) {
+        mensagemJogo.textContent = "Digite um número entre 0 e 10.";
+        mensagemJogo.style.color = 'orange';
+        return;
+    }
+
+    tentativas++;
+    const restantes = MAX_TENTATIVAS - tentativas;
+
+    if (palpite === numeroSecreto) {
+        mensagemJogo.textContent = "Parabéns! Você acertou o número " + numeroSecreto + " na tentativa " + tentativas + "!";
+        mensagemJogo.style.color = 'green';
+        finalizarJogo();
+    } else if (restantes === 0) {
+        mensagemJogo.textContent = "Fim de jogo! O número secreto era " + numeroSecreto + ".";
+        mensagemJogo.style.color = 'red';
+        finalizarJogo();
+    } else if (palpite < numeroSecreto) {
+        mensagemJogo.textContent = "Tentativa " + tentativas + ": " + palpite + " está errado. O número secreto é MAIOR.";
+        mensagemJogo.style.color = 'blue';
+    } else {
+        mensagemJogo.textContent = "Tentativa " + tentativas + ": " + palpite + " está errado. O número secreto é MENOR.";
+        mensagemJogo.style.color = 'blue';
+    }
+
+    tentativasRestantes.textContent = "Tentativas restantes: " + restantes;
+    inputPalpite.value = '';
+    inputPalpite.focus();
+}
+
+function finalizarJogo() {
+    inputPalpite.disabled = true;
+    btn_chutar.disabled = true;
+}
+
+iniciarJogo();
