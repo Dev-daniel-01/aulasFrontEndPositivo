@@ -41,3 +41,66 @@ nav a:hover{
     font-size: 200px;
     color: blueviolet;
 }
+
+/* ===== Atividades da Aula 11 - LocalStorage ===== */
+
+.atividade{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.centro{
+    text-align: center;
+}
+
+.saudacao{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 22px;
+}
+
+.numero{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.btnGrande{
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+.btnZerar{
+    background-color: #ffcccc;
+    border: 1px solid #e0a0a0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tabelaNotas{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tabelaNotas th,
+.tabelaNotas td{
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabelaNotas th{
+    background-color: burlywood;
+}
+
+/* Tema escuro (Atividade 3) */
+body.dark{
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark button{
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #777;
+}

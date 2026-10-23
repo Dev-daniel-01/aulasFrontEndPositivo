@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Desafio 2 - Bloco de Notas Persistente</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="atividade1.html">Atividade 1</a>
+        <a href="atividade2.html">Atividade 2</a>
+        <a href="desafio1.html">Desafio 1</a>
+        <a href="atividade3.html">Atividade 3</a>
+        <a href="desafio2.html">Desafio 2</a>
+    </nav>
+
+    <div class="atividade">
+        <h1>Bloco de Notas Persistente</h1>
+
+        <textarea id="txt_Nota" rows="4" cols="50" placeholder="Digite sua anotação..."></textarea>
+        <br>
+        <button id="btn_SalvarNota">Salvar Anotação</button>
+
+        <table class="tabelaNotas">
+            <thead>
+                <tr>
+                    <th>Nota</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+
+    <script src="./scripts/desafio2.js"></script>
+</body>
+</html>
